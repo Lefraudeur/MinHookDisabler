@@ -208,8 +208,8 @@ void Process::disableHooks()
 
 				if (!memcmp(possible_modified_bytes, read_bytes, 5)) continue; //all is ok
 				//Hook detected
-				std::cout << "Suspicious: " << (void*)jmp << '\n';
-				std::cout << "Press enter to disable..." << '\n';
+				std::cout << "Suspicious: " << (void*)jmp << "\n"
+				<< "Press enter to disable...\n";
 				std::cin.ignore();
 
 				//try to restore original bytes
