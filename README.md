@@ -1,0 +1,1 @@
+# MinHook disabler
