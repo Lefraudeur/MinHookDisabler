@@ -1,8 +1,8 @@
 # MinHook disabler
 
 A small external program that will attempt to detect and disable MinHook hooks in a process.
-Could be useful to disable some protections.
-For example, some anticheats hook the LoadLibrary function.
+<br/>Could be useful to disable some protections.
+<br/>For example, some anticheats hook the LoadLibrary function.
 
 #### How it works:
 For each .text section of each module loaded into the target process:
