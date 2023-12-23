@@ -13,13 +13,6 @@ public:
 
 	operator bool() const;
 
-	void debug();
-	void undebug();
-	void* allocate_memory(int size, DWORD access = PAGE_READWRITE);
-	DWORD set_protection(void* address, int size, DWORD access); //returns original prot
-	MODULEINFO getModuleInfo(const char* module_name);
-	void* pattern_scan(void* start_addr, void* end_addr, uint8_t pattern[], int pattern_size, DWORD access = PAGE_READWRITE);
-	std::vector<uint8_t*> pattern_scan_all(void* start_addr, void* end_addr, uint8_t pattern[], int pattern_size, DWORD access = PAGE_READWRITE);
 	void disableHooks();
 
 	template<typename T> inline std::unique_ptr<T[]> read_memory(T* address, int element_count)
